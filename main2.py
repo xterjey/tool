@@ -1,10 +1,10 @@
 import subprocess
 import time
 
-# Konfigurasi RTMP
-RTMP_URL = "rtmp://push-rtmp-l1-sg01.tiktokcdn.com/game"  # Ganti dengan RTMP URL Anda
-STREAM_KEY = "stream-2134260430939095132?c=ID&keeptime=00093a80&wsSecret=371cd8b7525211acf549f5deb60d6b30&wsTime=679aa379"  # Ganti dengan Stream Key Anda
-VIDEO_PATH = "1.mp4.mkv"  # Ganti dengan path ke video Anda
+# Meminta input dari pengguna
+RTMP_URL = input("Masukkan RTMP URL: ")
+STREAM_KEY = input("Masukkan Stream Key: ")
+VIDEO_PATH = input("Masukkan path video: ")
 
 # Perintah ffmpeg untuk streaming dengan 2 CPU core
 ffmpeg_command = [
